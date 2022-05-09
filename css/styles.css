@@ -69,10 +69,12 @@ nav {
   align-items: flex-end;
   margin: 0 10px 0 0;
 }
+
 .top-menu-lista-item {
   list-style: none;
   margin-left: 1.25rem;
 }
+
 .menu-lista-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -80,6 +82,7 @@ nav {
   color: #4f4f4f;
   font-stretch: condensed;
 }
+
 .menu-lista-link:hover {
   text-decoration: underline;
   color: #4099ff;
@@ -97,19 +100,27 @@ nav {
 }
 
 .contenedor1 {
-  margin: 100px 100px;
+  margin: 50px
+    /* top*/
+    100px
+    /* right */
+    50px
+    /* bottom */
+    100px
+    /*left*/
+  ;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.contenedor3 {
+/* .contenedor3 {
   width: 90%;
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
   padding: 60px 0;
-}
+} */
 
 h1 {
   font-size: 50px;
@@ -138,7 +149,7 @@ header::before {
 
 .contenido-header {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,13 +165,14 @@ header::before {
   width: 300px;
   border-radius: 50%;
   margin: auto;
+
 }
 
-.biografia-texto{
+.biografia-texto {
   margin-right: 30px;
 }
 
-.miFoto_img{
+.miFoto_img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -215,6 +227,7 @@ header::before {
 .banner-img {
   width: 100%;
   display: flex;
+  height: 650px;
   background-blend-mode: lighten;
   background: url("https://charoconector.com/wp-content/uploads/2018/02/04C.jpg") no-repeat center;
 }
@@ -222,41 +235,50 @@ header::before {
 .activo {
   font-weight: bolder;
 }
+
 .txt-center {
   text-align: center;
 }
+
 .txt-izquierda {
   text-align: leftt;
 }
+
 .left60 {
   margin-left: 60px;
 }
+
 .mayuscula {
   text-transform: capitalize;
 }
+
 .ancho-pagina {
   width: 1170px;
   margin: 0 auto;
 }
+
 .subrayado-top {
   background: #bcbcbc none repeat scroll 0 0;
   margin: 0 auto;
   width: 45px;
   height: 2px;
 }
+
 .subrayado-bottom {
   background: #bcbcbc none repeat scroll 0 0;
   height: 1px;
   margin: 0 auto;
   margin-top: 3px;
-  width: 80px;
+  width: 80px
 }
+
 .subrayado-izqbot {
   background: #bcbcbc none repeat scroll 0 0;
   height: 1px;
   margin: 3px 0px;
   width: 80px;
 }
+
 .subrayado-izqtop {
   background: #bcbcbc none repeat scroll 0 0;
   width: 45px;
@@ -264,25 +286,25 @@ header::before {
 }
 
 
-  /* HABILIDADES */
+/* HABILIDADES */
 
-.skills img{
+.skills img {
   width: 75px;
   justify-items: space-around;
   padding: 5px;
 }
 
-.fondo{
+.fondo {
   background-color: #d8d8d8;
   width: 100%;
 }
 
-.habilidades{
+.habilidades {
   padding: 15px;
 }
 
-.habilidades .txt-center{
-  padding:20px;
+.habilidades .txt-center {
+  padding: 20px;
 }
 
 .habilidades-softHard {
@@ -291,6 +313,7 @@ header::before {
   display: flex;
   justify-content: space-between;
 }
+
 .habilidades-skills_item {
   margin-top: 25px;
   width: 300px;
@@ -304,24 +327,29 @@ header::before {
   height: 20px;
   background-color: #393939;
 }
+
 .barra30 {
   animation-name: progreso30;
   animation-duration: 3000ms;
 }
+
 @keyframes progreso30 {
   0% {
     width: 0%;
   }
+
   100% {
     width: 30%;
   }
 }
+
 /*--------------------------*/
 .linea50 {
   width: 50%;
   height: 20px;
   background-color: #393939;
 }
+
 .barra50 {
   animation-name: progreso50;
   animation-duration: 3000ms;
@@ -331,24 +359,29 @@ header::before {
   0% {
     width: 0%;
   }
+
   100% {
     width: 50%;
   }
 }
+
 /*--------------------------*/
 .linea20 {
   width: 20%;
   height: 20px;
   background-color: #393939;
 }
+
 .barra20 {
   animation-name: progreso20;
   animation-duration: 3000ms;
 }
+
 @keyframes progreso20 {
   0% {
     width: 0%;
   }
+
   100% {
     width: 20%;
   }
@@ -360,6 +393,7 @@ header::before {
   width: 70%;
   padding: 20px 50px;
 }
+
 .habilidades-hardskills {
   width: 30%;
   padding: 20px 50px;
@@ -367,138 +401,145 @@ header::before {
 
 
 
-  /* Formacion */
+/* Formacion */
 
-  .formaciones .txt-center{
-    padding-top: 15px;
-  }
+.formaciones .txt-center {
+  padding-top: 15px;
+}
 
-  .formaciones-tabla {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-  }
-  .formaciones-tabla-educacion,
-  .formaciones-tabla-experiencia {
-    width: 50%;
-    /* border-left: solid #bcbcbc 1px; */
-    font-family: "Montserrat", sans-serif;
-    vertical-align: top;
-  }
-  .formacion-item-year {
-    width: fit-content;
-    padding: 5px;
-    color: #ffffff;
-    position: relative;
-    font-weight: bold;
-    line-height: 1.1em;
-    margin: 0 0 3px;
-    background-color: #4099ff;
-    padding: 5px 8px 5px 8px;
-    margin-left: -2px;
-  }
-  .formacion-item-datos {
-    padding-left: 20px;
-  }
-  .formacion-item-datos_titulo {
-    padding-top: 5px;
-    color: #414141;
-    font-weight: bold;
-    font-size: 14px;
-    font-stretch: condensed;
-  }
-  .formacion-item-datos_subtitulo {
-    font-size: 12px;
-    color: #6a6a6a;
-    font-stretch: condensed;
-    padding-bottom: 15px;
-  }
+.formaciones-tabla {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
 
-  /* Portfolio */
+.formaciones-tabla-educacion,
+.formaciones-tabla-experiencia {
+  width: 50%;
+  /* border-left: solid #bcbcbc 1px; */
+  font-family: "Montserrat", sans-serif;
+  vertical-align: top;
+}
 
-  .portfolio {
-    padding: 15px;
-    padding-bottom: 50px;
-  }
+.formacion-item-year {
+  width: fit-content;
+  padding: 5px;
+  color: #ffffff;
+  position: relative;
+  font-weight: bold;
+  line-height: 1.1em;
+  margin: 0 0 3px;
+  background-color: #4099ff;
+  padding: 5px 8px 5px 8px;
+  margin-left: -2px;
+}
 
-  .portfolio .txt-center{
-    padding-top: 5px 20px;
-  }
+.formacion-item-datos {
+  padding-left: 20px;
+}
 
-  .portfolio h3{
-    justify-content: center; 
-    align-items: center; 
-    display: flex; 
-    padding-top:15px;
-    color: #415377;
-  }
+.formacion-item-datos_titulo {
+  padding-top: 5px;
+  color: #414141;
+  font-weight: bold;
+  font-size: 14px;
+  font-stretch: condensed;
+}
 
-  .portfolio-row{
-    display: flex;
-    padding: 50px 0px 0px 100px
-  }
+.formacion-item-datos_subtitulo {
+  font-size: 12px;
+  color: #6a6a6a;
+  font-stretch: condensed;
+  padding-bottom: 15px;
+}
 
-  .portfolio-img{
-    width: 600px;
-    height: auto;
-    border: solid #6a6a6a 5px;
-    margin: 0px 30px;
-  }
+/* Portfolio */
 
-  .portfolio-img:hover{
-    opacity: 1;
-		transform: scale(1.15,1.15);
-		-webkit-transform:scale(1.15,1.15);
-		-moz-transform:scale(1.15,1.15);
-		-ms-transform:scale(1.15,1.15);
-		-o-transform:scale(1.15,1.15);
-  }
+.portfolio {
+  padding: 15px;
+  padding-bottom: 50px;
+}
 
-  .portfolio-btn {
-    background-color: #4099ff;
-    border: 0 none;
-    border-radius: 5px;
-    font-size: 13px;
-    height: 42px;
-    line-height: 42px;
-    padding: 0 30px;
-    display: inline-block;
-    margin: 3px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-  }
-  .portfolio-btn:hover {
-    background-color: #6ca8ec;
-  }
+.portfolio .txt-center {
+  padding-top: 5px 20px;
+}
 
-  .portfolio-titulo {
-    margin: 100px 10px 0px 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    color: #4f4f4f;
-  }
-  .portfolio-subtitulo {
-    margin: 1px 10px 5px 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    color: #6a6a6a;
-  }
+.portfolio h3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 15px;
+  color: #415377;
+}
 
-  .portfolio-row a{
-    color:white;
-    text-transform: uppercase;
-  }
+.portfolio-row {
+  display: flex;
+  padding: 50px 0px 0px 100px
+}
 
-  .links{
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+.portfolio-img {
+  width: 600px;
+  height: auto;
+  border: solid #6a6a6a 5px;
+  margin: 0px 30px;
+}
+
+.portfolio-img:hover {
+  opacity: 1;
+  transform: scale(1.15, 1.15);
+  -webkit-transform: scale(1.15, 1.15);
+  -moz-transform: scale(1.15, 1.15);
+  -ms-transform: scale(1.15, 1.15);
+  -o-transform: scale(1.15, 1.15);
+}
+
+.portfolio-btn {
+  background-color: #4099ff;
+  border: 0 none;
+  border-radius: 5px;
+  font-size: 13px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 30px;
+  display: inline-block;
+  margin: 3px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover {
+  background-color: #6ca8ec;
+}
+
+.portfolio-titulo {
+  margin: 100px 10px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.portfolio-subtitulo {
+  margin: 1px 10px 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #6a6a6a;
+}
+
+.portfolio-row a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.links {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
 
-  /* Contacto */
+/* Contacto */
 /* SECCION CONTACTO */
 
 .contacto {
@@ -506,27 +547,33 @@ header::before {
   padding-top: 50px;
   padding-left: 50px;
 }
+
 .contacto-izq {
   width: 40%;
 }
+
 .contacto-der {
   width: 60%;
   margin: auto;
 }
+
 .contacto-lista {
   height: 100px;
 }
+
 .contacto-lista-titulo {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 600;
 }
+
 .contacto-lista-subtitulo {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
+
 .contacto-icono {
   float: left;
   font-size: 25px;
@@ -536,6 +583,7 @@ header::before {
   padding: 10px;
   margin: 5px;
 }
+
 .contacto-input {
   width: 31%;
   border: none;
@@ -543,18 +591,22 @@ header::before {
   padding: 12px;
   margin: 20px 10px;
 }
+
 .contacto-input:focus {
   outline: none;
 }
+
 .contacto-textarea {
   width: 70%;
   border: 1px solid #d9d9d9;
   padding: 12px;
   margin: 10px;
 }
+
 .contacto-textarea:focus {
   outline: none;
 }
+
 .contacto-submit {
   margin: 10px;
   display: block;
@@ -629,19 +681,18 @@ footer {
   border-color: #4099ff;
 }
 
-  #scrollUp {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    background: #4099ff;
-    height: 35px;
-    width: 35px;
-    right: 50px;
-    bottom: 77px;
-    border-radius: 15px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    font-size: 16px;
-    line-height: 34px;
-  }
-
+#scrollUp {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  background: #4099ff;
+  height: 35px;
+  width: 35px;
+  right: 50px;
+  bottom: 77px;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  line-height: 34px;
+}
